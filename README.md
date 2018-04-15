@@ -10,9 +10,15 @@ Utility that can choose the best MariaDB mirror by downloading the full mirror l
 apt-get install -y netselect
 ```
 
+## Install
+
+```bash
+apt-get install -y netselect && curl -o netselect-mariadb.pl https://raw.githubusercontent.com/inacho/netselect-mariadb/master/netselect-mariadb.pl && chmod +x netselect-mariadb.pl
+```
+
 ## Usage
 
-`sudo netselect-mariadb <debian_release> <mariadb_version>`
+`sudo netselect-mariadb.pl <debian_release> <mariadb_version>`
 
 
 Example:
