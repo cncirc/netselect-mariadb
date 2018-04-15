@@ -85,4 +85,3 @@ for (my $i = 0; $i < $num_hosts; $i++) {
 
 print "deb [arch=amd64,i386] ${best_host_url}repo/$mariadb_version/debian $debian_release main\n";
 print "deb-src ${best_host_url}repo/$mariadb_version/debian $debian_release main\n";
-exit;
