@@ -13,7 +13,7 @@ apt-get install -y netselect
 ## Install
 
 ```bash
-apt-get install -y netselect && curl -o netselect-mariadb.pl https://raw.githubusercontent.com/inacho/netselect-mariadb/master/netselect-mariadb.pl && chmod +x netselect-mariadb.pl
+apt-get install -y netselect && curl -o netselect-mariadb.pl https://raw.githubusercontent.com/cncirc/netselect-mariadb/master/netselect-mariadb.pl && chmod +x netselect-mariadb.pl
 ```
 
 ## Usage
