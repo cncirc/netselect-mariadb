@@ -40,7 +40,7 @@ if ($num_args != 2) {
 my $debian_release = $ARGV[0];
 my $mariadb_version = $ARGV[1];
 
-my $url = "http://spenntur.askmonty.org/";
+my $url = "https://mirmon.mariadb.org/";
 my $content = get($url);
 
 if (! defined $content) {
