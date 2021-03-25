@@ -53,9 +53,10 @@ $content =~ s/<\/TD>\n/<\/TD>/g;
 my @hosts = ();
 my @urls = ();
 
-while ($content =~ /<TD ALIGN="RIGHT"><A HREF="http:\/\/(.+?)">(.+?)<\/A>.+<TD>ok<\/TD>/g) {
-    push(@hosts, $2);
-    push(@urls, "http://$1");
+while ($content =~ /<TD ALIGN=RIGHT><A HREF="(http|https):\/\/(.+?)">(.+?)<\/A>.+<TD>ok<\/TD>/g) {
+    print "url=$1://$2 host=$3\n";
+    push(@hosts, $3);
+    push(@urls, "$1://$2");
 }
 
 my $num_hosts = @hosts;
