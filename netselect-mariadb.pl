@@ -54,7 +54,7 @@ my @hosts = ();
 my @urls = ();
 
 while ($content =~ /<TD ALIGN=RIGHT><A HREF="(http|https):\/\/(.+?)">(.+?)<\/A>.+<TD>ok<\/TD>/g) {
-    print "url=$1://$2 host=$3\n";
+#    print "url=$1://$2 host=$3\n";
     push(@hosts, $3);
     push(@urls, "$1://$2");
 }
